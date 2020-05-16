@@ -9,6 +9,9 @@ github_username: afcrowther
 minimal_mistakes_skin: default
 search: true
 locale: en-GB
+url: "https://afcrowther.github.io"
+baseurl: "/"
+repository: "afcrowther/afcrowther.github.io"
 
 # Build settings
 markdown: kramdown
@@ -23,11 +26,25 @@ comments:
   provider: "disqus"
   disqus:
     shortname: "blog-iyhtp2xgw8"
-twitter: afcrowther
+twitter: 
+  username: "afcrowther"
 
 include:
   - _pages
 
+# masthead
+main:
+  - title: "Posts"
+    url: /posts/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "About"
+    url: /about/
+    #- title: "Site Visits"
+  - title: "Useful Links"
+    url: /links/
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -50,9 +67,10 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Adam Crowther"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Just a software developer looking for a place to document the things he learns."
+  name    : "Adam Crowther"
+  avatar  : "/assets/images/bio-photo.jpg"
+  bio     : "Just a software developer looking for a place to document the things he learns."
+  location: "London, UK"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -102,3 +120,19 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# seo
+social:
+  type: Person
+  name: afcrowther
+  links:
+    - "https://twitter.com/afcrowther"
+    - "https://linkedin.com/afcrowther"
+    - "https://github.com/afcrowther"
+
+# analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-165477451-1"
+    anonymize_ip: false
