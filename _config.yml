@@ -1,8 +1,8 @@
 title: afcrowther
 email: afcrowther@icloud.com
-description: >- # this means to ignore newlines until "baseurl:"
-  The personal website of Adam Crowther. Revolves mostly around
-  a blog of my learnings and projects in the fields of
+description: >- 
+  My personal site. Mainly used as a place to record
+  my ongoing forays and adventures within the fields of 
   programming and computer science.
 twitter_username: afcrowther
 github_username: afcrowther
@@ -15,7 +15,7 @@ repository: "afcrowther/afcrowther.github.io"
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.19.2
 # Outputting
 permalink: /:categories/:title/
 breadcrumbs: true
@@ -32,31 +32,6 @@ twitter:
 include:
   - _pages
 
-# masthead
-main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
-    #- title: "Site Visits"
-  - title: "Useful Links"
-    url: /links/
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -69,8 +44,7 @@ plugins:
 author:
   name    : "Adam Crowther"
   avatar  : "/assets/images/bio-photo.jpg"
-  bio     : "Just a software developer looking for a place to document the things he learns."
-  location: "London, UK"
+  bio     : "Just another developer with a blog."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -80,7 +54,7 @@ author:
       url: "https://github.com/afcrowther"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/afcrowther"
+      url: "https://linkedin.com/in/afcrowther"
 
 footer:
   links:
@@ -92,7 +66,12 @@ footer:
       url: "https://github.com/afcrowther"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/afcrowther"
+      url: "https://linkedin.com/in/afcrowther"
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
   # _posts
@@ -106,6 +85,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: "side_links"
   # _pages
   - scope:
       path: "_pages"
@@ -113,6 +94,18 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "side_links"
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      sidebar:
+        nav: side_links
 
 category_archive:
   type: liquid
@@ -121,13 +114,12 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# seo
 social:
   type: Person
   name: afcrowther
   links:
     - "https://twitter.com/afcrowther"
-    - "https://linkedin.com/afcrowther"
+    - "https://linkedin.com/in/afcrowther"
     - "https://github.com/afcrowther"
 
 # analytics

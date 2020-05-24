@@ -1,8 +1,10 @@
 ---
 permalink: /about/
-title: "About"
+title: "About Me"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I'm a London based software developer with experience working with a variety of large scale distributed systems.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Since I first began working with code, I've always found blogs and articles written and shared by others in the software development community to be an amazing resource - some of the best of which I have linked [here]({% link _pages/links.md %}). I thought it was time I added to that global network with some content of my own, so here we are.
+
+I feel that writing and sharing content is a great way to force yourself to really dig into topics to a level that you may otherwise not have - if only in an attempt to not make a fool out of yourself! It is to that end that I initially wanted to create this blog, but, if anyone else happens to stumble across it and find something useful, that's obviously an added bonus :)
