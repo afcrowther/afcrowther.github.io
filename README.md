@@ -1,4 +1,4 @@
 # Blog website
 
-- Hosted bu Github
+- Hosted by Github
 - Uses https://github.com/mmistakes/minimal-mistakes
